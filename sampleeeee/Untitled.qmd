@@ -1,0 +1,22 @@
+---
+title: "sampleeee"
+format: html
+editor: visual
+---
+
+```{r}
+data("crimtab")
+df <- data.frame(
+  Height = as.numeric(colnames(crimtab)),
+  Count = colSums(crimtab)
+)
+library(ggplot2)
+ggplot(df, aes(x = Height, y = Count)) +
+  geom_col(fill = "yellow") +
+  labs(
+    title = "Criminals by Height",
+    x = "Height",
+    y = "Number of Individuals"
+  )
+
+```

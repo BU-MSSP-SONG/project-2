@@ -1,0 +1,10 @@
+---
+title: "sample sep.23"
+format: html
+editor: visual
+---
+
+```{r}
+df <- c(1:10)
+plot(df)
+```
